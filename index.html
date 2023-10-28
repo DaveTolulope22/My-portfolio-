@@ -454,11 +454,11 @@
     <textarea name="message" placeholder="message" id="" cols="30" rows="10" required></textarea>
     
     <input type="submit" class="btn" value="send message">
+    <input type="button" class="btn" value="clear form" onclick="clearForm()">
 
 </form>
 
 <script>
-// You might want to trigger this function with another event, like a successful form submission.
 function clearForm() {
     document.getElementById('myForm').reset();
 }

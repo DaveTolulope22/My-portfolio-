@@ -447,17 +447,18 @@
 
    <form id="myForm" action="https://formspree.io/f/xyyqoblw" method="POST">
     
-    <input type="text" name="name" placeholder="name" class="box">
-    <input type="email" name="_replyto" placeholder="email" class="box">
-    <input type="number" name="number" placeholder="number" class="box">
+    <input type="text" name="name" placeholder="name" class="box" required>
+    <input type="email" name="_replyto" placeholder="email" class="box" required>
+    <input type="number" name="number" placeholder="number" class="box" required>
     
-    <textarea name="message" placeholder="message" id="" cols="30" rows="10"></textarea>
+    <textarea name="message" placeholder="message" id="" cols="30" rows="10" required></textarea>
     
-    <input type="submit" class="btn" value="send message" onclick="clearForm()">
+    <input type="submit" class="btn" value="send message">
 
 </form>
 
 <script>
+// You might want to trigger this function with another event, like a successful form submission.
 function clearForm() {
     document.getElementById('myForm').reset();
 }
